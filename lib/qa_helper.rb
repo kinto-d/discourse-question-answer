@@ -27,7 +27,7 @@ module QAHelper
 
       answers = posts.where(reply_to_post_number: [nil, ''])
         .where.not(post_number: 1)
-        .order("vote_count DESC, post_number ASC")
+        .order("post_number ASC")
 
       count = 1
       answers.each do |a|
