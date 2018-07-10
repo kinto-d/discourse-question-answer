@@ -1,5 +1,5 @@
 ::PostSerializer.class_eval do
-  attributes :vote_count
+  # attributes :vote_count
 end
 
 require 'post_actions_controller'
